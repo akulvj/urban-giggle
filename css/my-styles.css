@@ -40,7 +40,7 @@ body {
 
 #main-header {
   padding-left: 0;
-  padding-right: 0;
+  padding-right: 5px;
 }
 
 .header-section {
