@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Sidebar</title>
+    <title>NSS Blog</title>
     <!-- CSS only -->
     <link
       rel="stylesheet"
@@ -14,7 +14,10 @@
     <link rel="stylesheet" href="css/bootstrap.min.css" />
     <link rel="stylesheet" href="css/my-styles.css" />
     <!-- Quill CSS -->
-    <link href="https://cdn.quilljs.com/1.3.6/quill.snow.css" rel="stylesheet">
+    <link
+      href="https://cdn.quilljs.com/1.3.6/quill.snow.css"
+      rel="stylesheet"
+    />
     <!-- Font Awesome -->
     <script
       src="https://kit.fontawesome.com/d196ea7eb0.js"
@@ -31,13 +34,14 @@
     <nav
       class="navbar navbar-expand-lg navbar-light bg-light border-bottom border-info"
     >
-      <div  href="#">
+      <div href="#">
         <a class="navbar-brand" href="#">
-          <img class="nss-logo"
-          src="images/NSSlogo.png"
-          class="d-inline-block align-top"
-          alt="nss-logo"
-        />
+          <img
+            class="nss-logo"
+            src="images/NSSlogo.png"
+            class="d-inline-block align-top"
+            alt="nss-logo"
+          />
         </a>
         <!-- <a class="navbar-brand" href="#">
           <img class="vit-logo"
@@ -46,9 +50,9 @@
           alt="vit-logo"
         />
         </a> -->
-        <a class="navbar-brand navbar-title" href="#">Blog</a>
+        <a class="navbar-brand navbar-title" href="#">NSS Blog</a>
       </div>
-      
+
       <button
         class="navbar-toggler"
         type="button"
@@ -152,19 +156,23 @@
         </div>
       </div>
 
-        <div class="post-div">
+      <div class="post-div">
+        <textarea
+          class="post-title"
+          type="text"
+          name="Title"
+          placeholder="Title"
+        ></textarea>
 
-          <textarea class="post-title" type="text" name="Title" placeholder="Title"></textarea>
-
-      <div class="user-input" id="scrolling-container">
-        <div class="text-field" id="editor-container">
-          <p><br></p>
+        <div class="user-input" id="scrolling-container">
+          <div class="text-field" id="editor-container">
+            <p><br /></p>
+          </div>
         </div>
+        <input class="btn btn-outline-light" type="submit" value="Submit" />
       </div>
-      <input class="btn btn-outline-light" type="submit" value="Submit">
     </div>
-    </div>
-    
+
     <!-- footer section -->
     <nav class="footer-section">
       follow us:
@@ -197,17 +205,17 @@
     <script src="https://cdn.quilljs.com/1.3.6/quill.js"></script>
     <!-- Initialize Quill editor -->
     <script>
-      var quill = new Quill('#editor-container', {
-  modules: {
-    toolbar: [
-      [{ header: [1, 2, false] }],
-      ['bold', 'italic', 'underline'],
-    ]
-  },
-  scrollingContainer: '#scrolling-container', 
-  placeholder: 'Share your story...',
-  theme: 'snow'
-});
+      var quill = new Quill("#editor-container", {
+        modules: {
+          toolbar: [
+            [{ header: [1, 2, false] }],
+            ["bold", "italic", "underline"],
+          ],
+        },
+        scrollingContainer: "#scrolling-container",
+        placeholder: "Share your story...",
+        theme: "snow",
+      });
     </script>
   </body>
 </html>
